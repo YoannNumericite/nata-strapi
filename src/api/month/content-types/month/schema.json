@@ -31,6 +31,18 @@
         }
       },
       "type": "text"
+    },
+    "meetings": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::meeting.meeting",
+      "mappedBy": "month"
+    },
+    "symptoms": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::symptom.symptom",
+      "mappedBy": "month"
     }
   }
 }

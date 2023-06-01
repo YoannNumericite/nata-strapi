@@ -1,11 +1,10 @@
 {
-  "kind": "collectionType",
-  "collectionName": "responses",
+  "kind": "singleType",
+  "collectionName": "help_arounds",
   "info": {
-    "singularName": "response",
-    "pluralName": "responses",
-    "displayName": "Response",
-    "description": ""
+    "singularName": "help-around",
+    "pluralName": "help-arounds",
+    "displayName": "HelpAround"
   },
   "options": {
     "draftAndPublish": true
@@ -16,15 +15,7 @@
     }
   },
   "attributes": {
-    "value": {
-      "pluginOptions": {
-        "i18n": {
-          "localized": false
-        }
-      },
-      "type": "string"
-    },
-    "label": {
+    "title": {
       "pluginOptions": {
         "i18n": {
           "localized": true
@@ -32,29 +23,15 @@
       },
       "type": "string"
     },
-    "question": {
-      "type": "relation",
-      "relation": "manyToOne",
-      "target": "api::question.question",
-      "inversedBy": "responses"
-    },
-    "redirectScreen": {
+    "doctorTitle": {
       "pluginOptions": {
         "i18n": {
-          "localized": false
-        }
-      },
-      "type": "boolean"
-    },
-    "nameMatomo": {
-      "pluginOptions": {
-        "i18n": {
-          "localized": false
+          "localized": true
         }
       },
       "type": "string"
     },
-    "redirectScreenContent": {
+    "doctorSubtext": {
       "pluginOptions": {
         "i18n": {
           "localized": true
@@ -62,15 +39,15 @@
       },
       "type": "text"
     },
-    "phoneNumber": {
+    "foodTitle": {
       "pluginOptions": {
         "i18n": {
-          "localized": false
+          "localized": true
         }
       },
       "type": "string"
     },
-    "labelSearch": {
+    "foodSubtext": {
       "pluginOptions": {
         "i18n": {
           "localized": true
@@ -78,7 +55,15 @@
       },
       "type": "text"
     },
-    "boldBottom": {
+    "welcomeTitle": {
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "type": "string"
+    },
+    "welcomeSubtext": {
       "pluginOptions": {
         "i18n": {
           "localized": true
@@ -86,22 +71,29 @@
       },
       "type": "text"
     },
-    "valueMatomo": {
+    "cleaningTitle": {
       "pluginOptions": {
         "i18n": {
-          "localized": false
+          "localized": true
         }
       },
       "type": "string"
     },
-    "isDanger": {
+    "cleaningSubtext": {
       "pluginOptions": {
         "i18n": {
-          "localized": false
+          "localized": true
         }
       },
-      "type": "boolean",
-      "default": false
+      "type": "text"
+    },
+    "noInfo": {
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "type": "text"
     }
   }
 }

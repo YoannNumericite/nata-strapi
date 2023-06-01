@@ -4,7 +4,8 @@
   "info": {
     "singularName": "symptom",
     "pluralName": "symptoms",
-    "displayName": "Symptom"
+    "displayName": "Symptom",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
@@ -22,6 +23,32 @@
         }
       },
       "type": "string"
+    },
+    "month": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::month.month",
+      "inversedBy": "symptoms"
+    },
+    "slug": {
+      "pluginOptions": {
+        "i18n": {
+          "localized": false
+        }
+      },
+      "type": "string"
+    },
+    "status": {
+      "pluginOptions": {
+        "i18n": {
+          "localized": false
+        }
+      },
+      "type": "enumeration",
+      "enum": [
+        "minor",
+        "urgency"
+      ]
     }
   }
 }

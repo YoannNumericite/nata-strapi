@@ -4,7 +4,8 @@
   "info": {
     "singularName": "meeting",
     "pluralName": "meetings",
-    "displayName": "Meeting"
+    "displayName": "Meeting",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
@@ -26,10 +27,32 @@
     "isDone": {
       "pluginOptions": {
         "i18n": {
-          "localized": true
+          "localized": false
         }
       },
       "type": "boolean"
+    },
+    "month": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::month.month",
+      "inversedBy": "meetings"
+    },
+    "isMandatory": {
+      "pluginOptions": {
+        "i18n": {
+          "localized": false
+        }
+      },
+      "type": "boolean"
+    },
+    "maxMonth": {
+      "pluginOptions": {
+        "i18n": {
+          "localized": false
+        }
+      },
+      "type": "integer"
     }
   }
 }

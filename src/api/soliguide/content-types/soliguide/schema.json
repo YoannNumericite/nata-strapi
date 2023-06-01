@@ -1,11 +1,10 @@
 {
-  "kind": "collectionType",
-  "collectionName": "questions",
+  "kind": "singleType",
+  "collectionName": "soliguides",
   "info": {
-    "singularName": "question",
-    "pluralName": "questions",
-    "displayName": "Question",
-    "description": ""
+    "singularName": "soliguide",
+    "pluralName": "soliguides",
+    "displayName": "Soliguide"
   },
   "options": {
     "draftAndPublish": true
@@ -16,15 +15,7 @@
     }
   },
   "attributes": {
-    "code": {
-      "pluginOptions": {
-        "i18n": {
-          "localized": false
-        }
-      },
-      "type": "string"
-    },
-    "label": {
+    "open": {
       "pluginOptions": {
         "i18n": {
           "localized": true
@@ -32,42 +23,42 @@
       },
       "type": "string"
     },
-    "responses": {
-      "type": "relation",
-      "relation": "oneToMany",
-      "target": "api::response.response",
-      "mappedBy": "question"
-    },
-    "slug": {
+    "closed": {
       "pluginOptions": {
         "i18n": {
-          "localized": false
+          "localized": true
         }
       },
       "type": "string"
     },
-    "isSpecial": {
+    "go": {
       "pluginOptions": {
         "i18n": {
-          "localized": false
+          "localized": true
         }
       },
-      "type": "boolean",
-      "default": false
+      "type": "string"
     },
-    "verticalAnswer": {
+    "noResults": {
       "pluginOptions": {
         "i18n": {
-          "localized": false
+          "localized": true
         }
       },
-      "type": "boolean",
-      "default": false
+      "type": "string"
     },
-    "actionMatomo": {
+    "directAccess": {
       "pluginOptions": {
         "i18n": {
-          "localized": false
+          "localized": true
+        }
+      },
+      "type": "string"
+    },
+    "moreInfos": {
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
         }
       },
       "type": "string"
