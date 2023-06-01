@@ -107,7 +107,7 @@ coverage
 ############################
 
 .env
-congif/server.ts
+config/server.ts
 license.txt
 exports
 *.cache
