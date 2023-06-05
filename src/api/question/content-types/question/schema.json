@@ -71,6 +71,14 @@
         }
       },
       "type": "string"
+    },
+    "image": {
+      "pluginOptions": {
+        "i18n": {
+          "localized": false
+        }
+      },
+      "type": "string"
     }
   }
 }
