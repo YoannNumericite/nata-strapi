@@ -13,9 +13,22 @@ export default {
     );
 
     const saveData = async (serviceKey, service) => {
-      data[serviceKey] = await strapi
-        .service(service)
-        .find({ ...ctx.query, pagination: { pageSize: 50 } });
+      const populating =
+        serviceKey === "question"
+          ? { responses: true }
+          : serviceKey === "response"
+          ? { question: true }
+          : serviceKey === "month"
+          ? { meetings: true, symptoms: true }
+          : serviceKey === "meeting"
+          ? { month: true }
+          : {};
+
+      data[serviceKey] = await strapi.service(service).find({
+        ...ctx.query,
+        pagination: { pageSize: 50 },
+        populate: { ...populating },
+      });
     };
 
     await Promise.all(
