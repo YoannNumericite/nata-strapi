@@ -4,7 +4,8 @@
   "info": {
     "singularName": "soliguide",
     "pluralName": "soliguides",
-    "displayName": "Soliguide"
+    "displayName": "Soliguide",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
@@ -62,6 +63,11 @@
         }
       },
       "type": "string"
+    },
+    "categories": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::soliguide-categorie.soliguide-categorie"
     }
   }
 }
