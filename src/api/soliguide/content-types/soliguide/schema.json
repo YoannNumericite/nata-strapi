@@ -65,9 +65,12 @@
       "type": "string"
     },
     "categories": {
-      "type": "relation",
-      "relation": "oneToMany",
-      "target": "api::soliguide-categorie.soliguide-categorie"
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "type": "json"
     }
   }
 }
