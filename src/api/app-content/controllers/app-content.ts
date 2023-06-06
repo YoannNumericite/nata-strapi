@@ -17,7 +17,7 @@ export default {
         serviceKey === "question"
           ? { responses: true }
           : serviceKey === "response"
-          ? { question: true }
+          ? { question: true, helpsAround: true }
           : serviceKey === "month"
           ? { meetings: true, symptoms: true }
           : serviceKey === "meeting"

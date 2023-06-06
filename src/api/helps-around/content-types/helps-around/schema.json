@@ -1,0 +1,65 @@
+{
+  "kind": "collectionType",
+  "collectionName": "helps_arounds",
+  "info": {
+    "singularName": "helps-around",
+    "pluralName": "helps-arounds",
+    "displayName": "HelpsAround"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {
+    "i18n": {
+      "localized": true
+    }
+  },
+  "attributes": {
+    "title": {
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "type": "string"
+    },
+    "icon": {
+      "pluginOptions": {
+        "i18n": {
+          "localized": false
+        }
+      },
+      "type": "string"
+    },
+    "subtext": {
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "type": "string"
+    },
+    "code": {
+      "pluginOptions": {
+        "i18n": {
+          "localized": false
+        }
+      },
+      "type": "string"
+    },
+    "keywords": {
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "type": "json"
+    },
+    "response": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::response.response",
+      "inversedBy": "helpsAround"
+    }
+  }
+}

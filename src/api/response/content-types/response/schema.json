@@ -118,6 +118,12 @@
         }
       },
       "type": "json"
+    },
+    "helpsAround": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::helps-around.helps-around",
+      "mappedBy": "response"
     }
   }
 }
