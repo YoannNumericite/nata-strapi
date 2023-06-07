@@ -24,14 +24,6 @@
       },
       "type": "string"
     },
-    "isDone": {
-      "pluginOptions": {
-        "i18n": {
-          "localized": false
-        }
-      },
-      "type": "boolean"
-    },
     "month": {
       "type": "relation",
       "relation": "manyToOne",
@@ -53,6 +45,14 @@
         }
       },
       "type": "integer"
+    },
+    "code": {
+      "pluginOptions": {
+        "i18n": {
+          "localized": false
+        }
+      },
+      "type": "string"
     }
   }
 }
