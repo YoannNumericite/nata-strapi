@@ -32,18 +32,6 @@
       },
       "type": "text"
     },
-    "meetings": {
-      "type": "relation",
-      "relation": "oneToMany",
-      "target": "api::meeting.meeting",
-      "mappedBy": "month"
-    },
-    "symptoms": {
-      "type": "relation",
-      "relation": "oneToMany",
-      "target": "api::symptom.symptom",
-      "mappedBy": "month"
-    },
     "monthNumber": {
       "pluginOptions": {
         "i18n": {
@@ -52,6 +40,18 @@
       },
       "type": "integer",
       "unique": false
+    },
+    "symptoms": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::symptom.symptom",
+      "mappedBy": "months"
+    },
+    "meetings": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::meeting.meeting",
+      "mappedBy": "months"
     }
   }
 }

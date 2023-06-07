@@ -24,9 +24,9 @@
       },
       "type": "string"
     },
-    "month": {
+    "months": {
       "type": "relation",
-      "relation": "manyToOne",
+      "relation": "manyToMany",
       "target": "api::month.month",
       "inversedBy": "symptoms"
     },
