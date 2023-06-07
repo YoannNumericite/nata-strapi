@@ -43,6 +43,15 @@
       "relation": "oneToMany",
       "target": "api::symptom.symptom",
       "mappedBy": "month"
+    },
+    "monthNumber": {
+      "pluginOptions": {
+        "i18n": {
+          "localized": false
+        }
+      },
+      "type": "integer",
+      "unique": false
     }
   }
 }
