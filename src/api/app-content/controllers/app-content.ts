@@ -21,7 +21,9 @@ export default {
           : serviceKey === "month"
           ? { meetings: true, symptoms: true }
           : serviceKey === "meeting"
-          ? { month: true }
+          ? { months: true }
+          : serviceKey === "symptom"
+          ? { months: true }
           : {};
 
       data[serviceKey] = await strapi.service(service).find({
