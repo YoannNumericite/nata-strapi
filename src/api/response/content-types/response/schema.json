@@ -119,11 +119,11 @@
       },
       "type": "json"
     },
-    "helpsArounds": {
+    "helpsAround": {
       "type": "relation",
       "relation": "manyToMany",
       "target": "api::helps-around.helps-around",
-      "mappedBy": "responses"
+      "inversedBy": "responses"
     }
   }
 }

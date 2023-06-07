@@ -60,7 +60,7 @@
       "type": "relation",
       "relation": "manyToMany",
       "target": "api::response.response",
-      "inversedBy": "helpsArounds"
+      "mappedBy": "helpsAround"
     }
   }
 }
