@@ -4,7 +4,8 @@
   "info": {
     "singularName": "helps-around",
     "pluralName": "helps-arounds",
-    "displayName": "HelpsAround"
+    "displayName": "HelpsAround",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
@@ -55,11 +56,11 @@
       },
       "type": "json"
     },
-    "response": {
+    "responses": {
       "type": "relation",
-      "relation": "manyToOne",
+      "relation": "manyToMany",
       "target": "api::response.response",
-      "inversedBy": "helpsAround"
+      "inversedBy": "helpsArounds"
     }
   }
 }
