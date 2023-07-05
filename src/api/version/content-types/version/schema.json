@@ -1,0 +1,18 @@
+{
+  "kind": "singleType",
+  "collectionName": "versions",
+  "info": {
+    "singularName": "version",
+    "pluralName": "versions",
+    "displayName": "Version"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "version_number": {
+      "type": "string"
+    }
+  }
+}
