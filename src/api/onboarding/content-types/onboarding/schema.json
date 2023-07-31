@@ -4,7 +4,8 @@
   "info": {
     "singularName": "onboarding",
     "pluralName": "onboardings",
-    "displayName": "Onboarding"
+    "displayName": "Onboarding",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
@@ -62,6 +63,22 @@
         }
       },
       "type": "text"
+    },
+    "locationDescription": {
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "type": "string"
+    },
+    "locationServiceText": {
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "type": "string"
     }
   }
 }
