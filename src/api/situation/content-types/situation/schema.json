@@ -4,7 +4,8 @@
   "info": {
     "singularName": "situation",
     "pluralName": "situations",
-    "displayName": "Situation"
+    "displayName": "Situation",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
@@ -112,6 +113,14 @@
       "type": "string"
     },
     "profileHousing": {
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "type": "string"
+    },
+    "dateOfBirthTitle": {
       "pluginOptions": {
         "i18n": {
           "localized": true
