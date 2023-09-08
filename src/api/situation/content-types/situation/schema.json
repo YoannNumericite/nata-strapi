@@ -120,11 +120,31 @@
       },
       "type": "string"
     },
-<<<<<<< HEAD
-    "dateOfBirthTitle": {
-=======
     "dateOfBirthPlaceholder": {
->>>>>>> 319bd99 (feat: adding placeholder when date is not defined)
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "type": "string"
+    },
+    "dateOfBirthTitle": {
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "type": "string"
+    },
+    "dateOfBirthConfirm": {
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "type": "string"
+    },
+    "dateOfBirthCancel": {
       "pluginOptions": {
         "i18n": {
           "localized": true
