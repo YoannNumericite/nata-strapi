@@ -1,0 +1,50 @@
+{
+  "kind": "collectionType",
+  "collectionName": "meeting_infos",
+  "info": {
+    "singularName": "meeting-info",
+    "pluralName": "meeting-infos",
+    "displayName": "MeetingInfo",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {
+    "i18n": {
+      "localized": true
+    }
+  },
+  "attributes": {
+    "title": {
+      "type": "string",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
+    },
+    "description": {
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "type": "text"
+    },
+    "img_slug": {
+      "pluginOptions": {
+        "i18n": {
+          "localized": false
+        }
+      },
+      "type": "string"
+    },
+    "meeting": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::meeting.meeting",
+      "inversedBy": "meeting_info"
+    }
+  }
+}

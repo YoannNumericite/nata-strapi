@@ -53,6 +53,21 @@
         }
       },
       "type": "string"
+    },
+    "hasMoreInfo": {
+      "pluginOptions": {
+        "i18n": {
+          "localized": false
+        }
+      },
+      "type": "boolean",
+      "default": false
+    },
+    "meeting_info": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::meeting-info.meeting-info",
+      "mappedBy": "meeting"
     }
   }
 }
