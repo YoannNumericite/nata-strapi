@@ -21,7 +21,7 @@ export default {
           : serviceKey === "month"
           ? { meetings: true, symptoms: true }
           : serviceKey === "meeting"
-          ? { months: true }
+          ? { months: true, meeting_info: true }
           : serviceKey === "symptom"
           ? { months: true }
           : {};

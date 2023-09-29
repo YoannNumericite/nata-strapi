@@ -65,9 +65,9 @@
     },
     "meeting_info": {
       "type": "relation",
-      "relation": "oneToOne",
+      "relation": "manyToOne",
       "target": "api::meeting-info.meeting-info",
-      "mappedBy": "meeting"
+      "inversedBy": "meetings"
     }
   }
 }

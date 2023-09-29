@@ -40,11 +40,11 @@
       },
       "type": "string"
     },
-    "meeting": {
+    "meetings": {
       "type": "relation",
-      "relation": "oneToOne",
+      "relation": "oneToMany",
       "target": "api::meeting.meeting",
-      "inversedBy": "meeting_info"
+      "mappedBy": "meeting_info"
     }
   }
 }
