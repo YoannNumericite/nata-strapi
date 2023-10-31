@@ -47,6 +47,7 @@
       "type": "enumeration",
       "enum": [
         "minor",
+        "minor_urgency",
         "urgency"
       ]
     },
@@ -89,6 +90,22 @@
         }
       },
       "type": "text"
+    },
+    "urgencyPageMainTitle": {
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "type": "string"
+    },
+    "urgencyPageSubTitle": {
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "type": "string"
     }
   }
 }
