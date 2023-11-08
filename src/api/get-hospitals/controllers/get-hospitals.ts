@@ -121,6 +121,6 @@ export default {
       }
     });
 
-    return {hospitals: hps.filter(hp => hp.distance < rayon).sort((a, b) => a.distance - b.distance)};
+    return {hospitals: hps.filter(hp => hp.distance < rayon).sort((a, b) => a.distance - b.distance).slice(0, 10)};
   },
 };
